@@ -35,7 +35,7 @@ class Triangle(Shape):
 
     def __str__(self) -> str:
         """Return a string representation of the triangle."""
-        return f"the triangle color is (color={self._color}), This triangle has three sides with lengths of {self.side_1}, {self.side_2} and {self.side_3} centimeters.)"
+        return f"the shape color is (color={self._color}), This triangle has three sides with lengths of {self.side_1}, {self.side_2} and {self.side_3} centimeters.)"
     
     def caculate_area(self) -> float:
         """Calculate the area of the triangle using Heron's formula. sp: semi-perimeter"""
