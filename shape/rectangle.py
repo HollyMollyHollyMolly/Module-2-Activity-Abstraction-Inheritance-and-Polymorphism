@@ -18,7 +18,7 @@ class Rectangle(Shape):
         if not isinstance(width, int):
             raise TypeError("Width must be numeric.")  
 
-        #if length <= 0 and width <= 0:
+        #if length <= 0 and width <= 0: # addition that can add here to make more sense.
         #   raise ValueError("Length and width must be positive numbers.")
         
         self.length = length

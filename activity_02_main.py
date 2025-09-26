@@ -4,46 +4,45 @@ classes.
 
 __author__ = "ACE Faculty"
 __version__ = "1.0.0"
-__credits__ = ""
+__credits__ = "Nguyen Dang Thai Ha"
+
+from shape.triangle import Triangle
+from shape.shape import Shape
+from shape.rectangle import Rectangle
 
 def main():
     """Test the functionality of the methods encapsulated 
     in this project.
     """
 
-    # In the statements coded below, ensure that any statement that 
-    # could result in an exception is handled.  When exceptions are 
-    # 'caught', display the exception message to the console.
+# 1. Create an empty list of Shape objects
+shapes = []
 
-    # *** PART 1 ***
-    print("*************PART 1****************")
+# 2. Create a Triangle instance and append it
+tri1 = Triangle("red", 3, 4, 5)
+shapes.append(tri1)
 
-    # 1. Create an empty list of Shape objects.
+# 3. Create a Rectangle instance and append it
+rect1 = Rectangle("blue", 6, 7)
+shapes.append(rect1)
 
+# 4. Create 3 additional shapes and append them
+tri2 = Triangle("green", 5, 5, 6)
+shapes.append(tri2)
 
-    # 2. Code a statement which creates an instance of the Triangle 
-    # class.
-    # Append the Triangle to the list of shapes.
+rect2 = Rectangle("yellow", 8, 3)
+shapes.append(rect2)
 
+tri3 = Triangle("purple", 7, 10, 5)
+shapes.append(tri3)
 
-    # 3. Code a statement which creates an instance of the Rectangle 
-    # class.
-    # Append the Rectangle to the list of shapes.
+# 5. Iterate through the list and print details
+for shape in shapes:
+    print(str(shape))
+    print(f"Area: {shape.caculate_area():.2f}")
+    print(f"Perimeter: {shape.caculate_perimeter():.2f}")
+    print()  # blank line for readability
 
-
-
-    # 4. Code 3 additional statements which creates an instance of 
-    # Triangle or Rectangle classes (your choice).
-    # Append these instances to the list of shapes.
-
-
-    # 5. Iterate through the list of shapes.  
-    # On each iteration:
-    # - print the shape
-    # - print the area of the shape to 2 decimal places
-    # - print the perimeter of the shape to 2 decimal places
-
-    # *** END PART 1 ***
 
 
 if __name__ == "__main__":
